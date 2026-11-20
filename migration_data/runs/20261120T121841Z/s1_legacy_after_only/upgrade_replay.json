@@ -1,0 +1,32 @@
+{
+  "delivered_on_replay": [],
+  "details": [
+    {
+      "coordinate_key": "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9",
+      "outcome": "NEWLY_HELD_UNDER_POLICY",
+      "previously_delivered": true,
+      "reasons": [
+        "BEFORE_INCOMPLETE:UNPARSEABLE:BEFORE_JSON_UNPARSEABLE:FULL_MIRROR_INTEGRITY_REQUIRED"
+      ],
+      "record_id": "cv2-36d9e18464ed6db2"
+    },
+    {
+      "coordinate_key": "ccb85cd1f50ac977f620c5a5e49a10f26b0b1fc8c05f8cbd019449060b770983",
+      "outcome": "SUPPRESSED_DUPLICATE",
+      "previously_delivered": true,
+      "reasons": [],
+      "record_id": "cv2-d4439b6b5390f37c"
+    }
+  ],
+  "newly_held_under_policy": [
+    "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9"
+  ],
+  "policy_name": "full_mirror_integrity_v2",
+  "policy_version": "filter-2.0",
+  "replayed_count": 2,
+  "scope": "all",
+  "still_held": [],
+  "suppressed_duplicates": [
+    "ccb85cd1f50ac977f620c5a5e49a10f26b0b1fc8c05f8cbd019449060b770983"
+  ]
+}

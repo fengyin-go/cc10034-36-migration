@@ -1,0 +1,310 @@
+[
+  {
+    "batch_summary": {
+      "delivered": [
+        "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9",
+        "ccb85cd1f50ac977f620c5a5e49a10f26b0b1fc8c05f8cbd019449060b770983"
+      ],
+      "held_for_replay": [],
+      "policy_name": "after_image_only_v1",
+      "policy_version": "filter-1.0",
+      "suppressed_duplicates": [],
+      "total": 2
+    },
+    "ledger": {
+      "conversion_evidence": [
+        {
+          "after_state": "PARSED",
+          "after_status": "PAID",
+          "before_missing_reason": "BEFORE_JSON_UNPARSEABLE",
+          "before_raw_text_preserved": "{oops",
+          "before_state": "UNPARSEABLE",
+          "coordinate": "sales.orders id=1001 mysql-bin.000042:88214",
+          "evidence_completeness": "PARTIAL",
+          "record_id": "cv2-36d9e18464ed6db2",
+          "schema_version": "mirror-json-v2"
+        },
+        {
+          "after_state": "PARSED",
+          "after_status": "PAID",
+          "before_missing_reason": null,
+          "before_raw_text_preserved": null,
+          "before_state": "PARSED",
+          "coordinate": "sales.orders id=1002 mysql-bin.000042:88501",
+          "evidence_completeness": "COMPLETE",
+          "record_id": "cv2-d4439b6b5390f37c",
+          "schema_version": "mirror-json-v2"
+        }
+      ],
+      "conversions_persisted": 2,
+      "decisions_persisted": 2,
+      "delivered_coordinates": [
+        "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9",
+        "ccb85cd1f50ac977f620c5a5e49a10f26b0b1fc8c05f8cbd019449060b770983"
+      ],
+      "deliveries_confirmed": 2,
+      "replay_scope_coordinates": []
+    },
+    "scenario": "S1 旧版部署 + after_image_only_v1"
+  },
+  {
+    "batch_summary": {
+      "delivered": [
+        "ccb85cd1f50ac977f620c5a5e49a10f26b0b1fc8c05f8cbd019449060b770983"
+      ],
+      "held_for_replay": [
+        "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9"
+      ],
+      "policy_name": "full_mirror_integrity_v2",
+      "policy_version": "filter-2.0",
+      "suppressed_duplicates": [],
+      "total": 2
+    },
+    "ledger": {
+      "conversion_evidence": [
+        {
+          "after_state": "PARSED",
+          "after_status": "PAID",
+          "before_missing_reason": "BEFORE_JSON_UNPARSEABLE",
+          "before_raw_text_preserved": "{oops",
+          "before_state": "UNPARSEABLE",
+          "coordinate": "sales.orders id=1001 mysql-bin.000042:88214",
+          "evidence_completeness": "PARTIAL",
+          "record_id": "cv2-36d9e18464ed6db2",
+          "schema_version": "mirror-json-v2"
+        },
+        {
+          "after_state": "PARSED",
+          "after_status": "PAID",
+          "before_missing_reason": null,
+          "before_raw_text_preserved": null,
+          "before_state": "PARSED",
+          "coordinate": "sales.orders id=1002 mysql-bin.000042:88501",
+          "evidence_completeness": "COMPLETE",
+          "record_id": "cv2-d4439b6b5390f37c",
+          "schema_version": "mirror-json-v2"
+        }
+      ],
+      "conversions_persisted": 2,
+      "decisions_persisted": 2,
+      "delivered_coordinates": [
+        "ccb85cd1f50ac977f620c5a5e49a10f26b0b1fc8c05f8cbd019449060b770983"
+      ],
+      "deliveries_confirmed": 1,
+      "replay_scope_coordinates": [
+        "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9"
+      ]
+    },
+    "scenario": "S2 新版部署 + full_mirror_integrity_v2"
+  },
+  {
+    "ledger": {
+      "conversion_evidence": [
+        {
+          "after_state": "PARSED",
+          "after_status": "PAID",
+          "before_missing_reason": "BEFORE_JSON_UNPARSEABLE",
+          "before_raw_text_preserved": "{oops",
+          "before_state": "UNPARSEABLE",
+          "coordinate": "sales.orders id=1001 mysql-bin.000042:88214",
+          "evidence_completeness": "PARTIAL",
+          "record_id": "cv2-36d9e18464ed6db2",
+          "schema_version": "mirror-json-v2"
+        },
+        {
+          "after_state": "PARSED",
+          "after_status": "PAID",
+          "before_missing_reason": null,
+          "before_raw_text_preserved": null,
+          "before_state": "PARSED",
+          "coordinate": "sales.orders id=1002 mysql-bin.000042:88501",
+          "evidence_completeness": "COMPLETE",
+          "record_id": "cv2-d4439b6b5390f37c",
+          "schema_version": "mirror-json-v2"
+        },
+        {
+          "after_state": "PARSED",
+          "after_status": "PAID",
+          "before_missing_reason": "BEFORE_JSON_UNPARSEABLE",
+          "before_raw_text_preserved": "{oops",
+          "before_state": "UNPARSEABLE",
+          "coordinate": "sales.orders id=1001 mysql-bin.000042:88214",
+          "evidence_completeness": "PARTIAL",
+          "record_id": "cv2-36d9e18464ed6db2",
+          "schema_version": "mirror-json-v2"
+        },
+        {
+          "after_state": "PARSED",
+          "after_status": "PAID",
+          "before_missing_reason": null,
+          "before_raw_text_preserved": null,
+          "before_state": "PARSED",
+          "coordinate": "sales.orders id=1002 mysql-bin.000042:88501",
+          "evidence_completeness": "COMPLETE",
+          "record_id": "cv2-d4439b6b5390f37c",
+          "schema_version": "mirror-json-v2"
+        }
+      ],
+      "conversions_persisted": 4,
+      "decisions_persisted": 6,
+      "delivered_coordinates": [
+        "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9",
+        "ccb85cd1f50ac977f620c5a5e49a10f26b0b1fc8c05f8cbd019449060b770983"
+      ],
+      "deliveries_confirmed": 2,
+      "replay_scope_coordinates": []
+    },
+    "reingest_summary": {
+      "delivered": [],
+      "held_for_replay": [
+        "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9"
+      ],
+      "policy_name": "full_mirror_integrity_v2",
+      "policy_version": "filter-2.0",
+      "suppressed_duplicates": [
+        "ccb85cd1f50ac977f620c5a5e49a10f26b0b1fc8c05f8cbd019449060b770983"
+      ],
+      "total": 2
+    },
+    "replay": {
+      "delivered_on_replay": [],
+      "details": [
+        {
+          "coordinate_key": "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9",
+          "outcome": "NEWLY_HELD_UNDER_POLICY",
+          "previously_delivered": true,
+          "reasons": [
+            "BEFORE_INCOMPLETE:UNPARSEABLE:BEFORE_JSON_UNPARSEABLE:FULL_MIRROR_INTEGRITY_REQUIRED"
+          ],
+          "record_id": "cv2-36d9e18464ed6db2"
+        },
+        {
+          "coordinate_key": "ccb85cd1f50ac977f620c5a5e49a10f26b0b1fc8c05f8cbd019449060b770983",
+          "outcome": "SUPPRESSED_DUPLICATE",
+          "previously_delivered": true,
+          "reasons": [],
+          "record_id": "cv2-d4439b6b5390f37c"
+        }
+      ],
+      "newly_held_under_policy": [
+        "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9"
+      ],
+      "policy_name": "full_mirror_integrity_v2",
+      "policy_version": "filter-2.0",
+      "replayed_count": 2,
+      "scope": "all",
+      "still_held": [],
+      "suppressed_duplicates": [
+        "ccb85cd1f50ac977f620c5a5e49a10f26b0b1fc8c05f8cbd019449060b770983"
+      ]
+    },
+    "scenario": "S3 S1 账本升级新策略后的回放与重复摄入"
+  },
+  {
+    "first_run": {
+      "delivered": [
+        "ccb85cd1f50ac977f620c5a5e49a10f26b0b1fc8c05f8cbd019449060b770983"
+      ],
+      "held_for_replay": [
+        "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9"
+      ],
+      "policy_name": "full_mirror_integrity_v2",
+      "policy_version": "filter-2.0",
+      "suppressed_duplicates": [],
+      "total": 2
+    },
+    "ledger": {
+      "conversion_evidence": [
+        {
+          "after_state": "PARSED",
+          "after_status": "PAID",
+          "before_missing_reason": "BEFORE_JSON_UNPARSEABLE",
+          "before_raw_text_preserved": "{oops",
+          "before_state": "UNPARSEABLE",
+          "coordinate": "sales.orders id=1001 mysql-bin.000042:88214",
+          "evidence_completeness": "PARTIAL",
+          "record_id": "cv2-36d9e18464ed6db2",
+          "schema_version": "mirror-json-v2"
+        },
+        {
+          "after_state": "PARSED",
+          "after_status": "PAID",
+          "before_missing_reason": null,
+          "before_raw_text_preserved": null,
+          "before_state": "PARSED",
+          "coordinate": "sales.orders id=1002 mysql-bin.000042:88501",
+          "evidence_completeness": "COMPLETE",
+          "record_id": "cv2-d4439b6b5390f37c",
+          "schema_version": "mirror-json-v2"
+        },
+        {
+          "after_state": "PARSED",
+          "after_status": "PAID",
+          "before_missing_reason": "BEFORE_JSON_UNPARSEABLE",
+          "before_raw_text_preserved": "{oops",
+          "before_state": "UNPARSEABLE",
+          "coordinate": "sales.orders id=1001 mysql-bin.000042:88214",
+          "evidence_completeness": "PARTIAL",
+          "record_id": "cv2-36d9e18464ed6db2",
+          "schema_version": "mirror-json-v2"
+        },
+        {
+          "after_state": "PARSED",
+          "after_status": "PAID",
+          "before_missing_reason": null,
+          "before_raw_text_preserved": null,
+          "before_state": "PARSED",
+          "coordinate": "sales.orders id=1002 mysql-bin.000042:88501",
+          "evidence_completeness": "COMPLETE",
+          "record_id": "cv2-d4439b6b5390f37c",
+          "schema_version": "mirror-json-v2"
+        }
+      ],
+      "conversions_persisted": 4,
+      "decisions_persisted": 5,
+      "delivered_coordinates": [
+        "ccb85cd1f50ac977f620c5a5e49a10f26b0b1fc8c05f8cbd019449060b770983"
+      ],
+      "deliveries_confirmed": 1,
+      "replay_scope_coordinates": [
+        "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9"
+      ]
+    },
+    "replay_of_held": {
+      "delivered_on_replay": [],
+      "details": [
+        {
+          "coordinate_key": "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9",
+          "outcome": "STILL_HELD",
+          "previously_delivered": false,
+          "reasons": [
+            "BEFORE_INCOMPLETE:UNPARSEABLE:BEFORE_JSON_UNPARSEABLE:FULL_MIRROR_INTEGRITY_REQUIRED"
+          ],
+          "record_id": "cv2-36d9e18464ed6db2"
+        }
+      ],
+      "newly_held_under_policy": [],
+      "policy_name": "full_mirror_integrity_v2",
+      "policy_version": "filter-2.0",
+      "replayed_count": 1,
+      "scope": "held",
+      "still_held": [
+        "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9"
+      ],
+      "suppressed_duplicates": []
+    },
+    "scenario": "S4 新版部署重复转换 + 待重放幂等",
+    "second_run": {
+      "delivered": [],
+      "held_for_replay": [
+        "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9"
+      ],
+      "policy_name": "full_mirror_integrity_v2",
+      "policy_version": "filter-2.0",
+      "suppressed_duplicates": [
+        "ccb85cd1f50ac977f620c5a5e49a10f26b0b1fc8c05f8cbd019449060b770983"
+      ],
+      "total": 2
+    }
+  }
+]

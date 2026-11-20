@@ -1,0 +1,182 @@
+{
+  "delivered": [
+    "ccb85cd1f50ac977f620c5a5e49a10f26b0b1fc8c05f8cbd019449060b770983"
+  ],
+  "held_for_replay": [
+    "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9"
+  ],
+  "policy_name": "full_mirror_integrity_v2",
+  "policy_version": "filter-2.0",
+  "results": [
+    {
+      "coordinate_key": "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9",
+      "decision": {
+        "coordinate_key": "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9",
+        "decided_at": "2026-11-20T12:18:41.400193+00:00",
+        "decision_id": "fd-feaa24bcb7b6aa1e",
+        "evidence_fields": {
+          "after.$.status": "PAID",
+          "after.missing_reason": null,
+          "after.state": "PARSED",
+          "before.missing_reason": "BEFORE_JSON_UNPARSEABLE",
+          "before.state": "UNPARSEABLE",
+          "operation": "UPDATE",
+          "required_after_status": "PAID"
+        },
+        "mirror_versions": {
+          "after.observed_type": "object",
+          "after.slot_state": "PARSED",
+          "before.observed_type": "json-string",
+          "before.slot_state": "UNPARSEABLE",
+          "policy_version": "filter-2.0",
+          "schema_version": "mirror-json-v2"
+        },
+        "policy_name": "full_mirror_integrity_v2",
+        "policy_version": "filter-2.0",
+        "reasons": [
+          "BEFORE_INCOMPLETE:UNPARSEABLE:BEFORE_JSON_UNPARSEABLE:FULL_MIRROR_INTEGRITY_REQUIRED"
+        ],
+        "record_id": "cv2-36d9e18464ed6db2",
+        "result": "HELD_FOR_REPLAY"
+      },
+      "decision_result": "HELD_FOR_REPLAY",
+      "delivery_status": "HELD_FOR_REPLAY",
+      "evidence_completeness": "PARTIAL",
+      "reasons": [
+        "BEFORE_INCOMPLETE:UNPARSEABLE:BEFORE_JSON_UNPARSEABLE:FULL_MIRROR_INTEGRITY_REQUIRED"
+      ],
+      "record": {
+        "after": {
+          "missing_reason": null,
+          "observed_type": "object",
+          "raw_text": null,
+          "state": "PARSED",
+          "value": {
+            "amount": 199.0,
+            "customer_id": 77,
+            "id": 1001,
+            "order_no": "ORD-1001",
+            "status": "PAID"
+          }
+        },
+        "before": {
+          "missing_reason": "BEFORE_JSON_UNPARSEABLE",
+          "observed_type": "json-string",
+          "raw_text": "{oops",
+          "state": "UNPARSEABLE",
+          "value": null
+        },
+        "converted_at": "2026-11-20T12:18:41.399839+00:00",
+        "coordinate_key": "0f490eca0bae7afe581a5878e7cc84f997c948a37c90bc6ff3b032d194ac0fc9",
+        "evidence_completeness": "PARTIAL",
+        "operation": "UPDATE",
+        "origin": "legacy-env/legacy_batch.json",
+        "parse_errors": [
+          "payload.before JSON 解析失败：Expecting property name enclosed in double quotes（原文已留痕）"
+        ],
+        "record_id": "cv2-36d9e18464ed6db2",
+        "schema_version": "mirror-json-v2",
+        "source_coordinate": {
+          "binlog_file": "mysql-bin.000042",
+          "binlog_position": 88214,
+          "database": "sales",
+          "gtid": "3E11FA47-71CA-11E1-9E33-C80AA9429562:2310",
+          "operation": "UPDATE",
+          "row_key": {
+            "id": 1001
+          },
+          "table": "orders"
+        },
+        "source_marker": "1.9.7.Final"
+      },
+      "record_id": "cv2-36d9e18464ed6db2",
+      "repeated_conversion": false
+    },
+    {
+      "coordinate_key": "ccb85cd1f50ac977f620c5a5e49a10f26b0b1fc8c05f8cbd019449060b770983",
+      "decision": {
+        "coordinate_key": "ccb85cd1f50ac977f620c5a5e49a10f26b0b1fc8c05f8cbd019449060b770983",
+        "decided_at": "2026-11-20T12:18:41.400966+00:00",
+        "decision_id": "fd-0865210fb0721216",
+        "evidence_fields": {
+          "after.$.status": "PAID",
+          "after.missing_reason": null,
+          "after.state": "PARSED",
+          "before.missing_reason": null,
+          "before.state": "PARSED",
+          "operation": "UPDATE",
+          "required_after_status": "PAID"
+        },
+        "mirror_versions": {
+          "after.observed_type": "object",
+          "after.slot_state": "PARSED",
+          "before.observed_type": "object",
+          "before.slot_state": "PARSED",
+          "policy_version": "filter-2.0",
+          "schema_version": "mirror-json-v2"
+        },
+        "policy_name": "full_mirror_integrity_v2",
+        "policy_version": "filter-2.0",
+        "reasons": [],
+        "record_id": "cv2-d4439b6b5390f37c",
+        "result": "DELIVERED"
+      },
+      "decision_result": "DELIVERED",
+      "delivery_status": "DELIVERED",
+      "evidence_completeness": "COMPLETE",
+      "reasons": [],
+      "record": {
+        "after": {
+          "missing_reason": null,
+          "observed_type": "object",
+          "raw_text": null,
+          "state": "PARSED",
+          "value": {
+            "amount": 88.5,
+            "customer_id": 88,
+            "id": 1002,
+            "order_no": "ORD-1002",
+            "status": "PAID"
+          }
+        },
+        "before": {
+          "missing_reason": null,
+          "observed_type": "object",
+          "raw_text": null,
+          "state": "PARSED",
+          "value": {
+            "amount": 88.5,
+            "customer_id": 88,
+            "id": 1002,
+            "order_no": "ORD-1002",
+            "status": "CREATED"
+          }
+        },
+        "converted_at": "2026-11-20T12:18:41.400607+00:00",
+        "coordinate_key": "ccb85cd1f50ac977f620c5a5e49a10f26b0b1fc8c05f8cbd019449060b770983",
+        "evidence_completeness": "COMPLETE",
+        "operation": "UPDATE",
+        "origin": "legacy-env/legacy_batch.json",
+        "parse_errors": [],
+        "record_id": "cv2-d4439b6b5390f37c",
+        "schema_version": "mirror-json-v2",
+        "source_coordinate": {
+          "binlog_file": "mysql-bin.000042",
+          "binlog_position": 88501,
+          "database": "sales",
+          "gtid": "3E11FA47-71CA-11E1-9E33-C80AA9429562:2311",
+          "operation": "UPDATE",
+          "row_key": {
+            "id": 1002
+          },
+          "table": "orders"
+        },
+        "source_marker": "1.9.7.Final"
+      },
+      "record_id": "cv2-d4439b6b5390f37c",
+      "repeated_conversion": false
+    }
+  ],
+  "suppressed_duplicates": [],
+  "total": 2
+}

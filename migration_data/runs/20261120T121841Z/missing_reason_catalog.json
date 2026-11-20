@@ -1,0 +1,22 @@
+{
+  "AFTER_FIELD_ABSENT": {
+    "applies_to": "after",
+    "meaning": "payload.after 字段缺失或显式为 null，镜像槽位状态为 ABSENT。"
+  },
+  "BEFORE_FIELD_ABSENT": {
+    "applies_to": "before",
+    "meaning": "payload.before 字段缺失或显式为 null，镜像槽位状态为 ABSENT。"
+  },
+  "BEFORE_JSON_UNPARSEABLE": {
+    "applies_to": "before",
+    "meaning": "payload.before 为字符串但不是合法 JSON，原文保留在 raw_text，镜像值置空（null）且状态为 UNPARSEABLE，不得用空对象替代。"
+  },
+  "FULL_MIRROR_INTEGRITY_REQUIRED": {
+    "applies_to": "decision",
+    "meaning": "full_mirror_integrity_v2 策略要求前后镜像均为 PARSED，任一槽位非 PARSED 即拦截并进入待重放范围。"
+  },
+  "MIRROR_NOT_OBJECT": {
+    "applies_to": "before|after",
+    "meaning": "镜像字段可解析但顶层不是 JSON 对象，无法作为行镜像使用。"
+  }
+}
